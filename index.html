@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>北科大圖書館 - 自習室預約</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- 引入 Supabase SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body>
+    <div class="sidebar">
+        <h2>北科大圖書館</h2>
+        <p>自習室預約</p>
+        <ul>
+            <li class="active">首頁</li>
+            <li>預約紀錄</li>
+            <li>使用規則</li>
+        </ul>
+    </div>
+    
+    <div class="main-content">
+        <header>
+            <h1>自習室座位總覽</h1>
+            <button onclick="login()">學生登入</button>
+        </header>
+        
+        <div class="dashboard">
+            <div class="stats-card">
+                <h3>目前可用座位</h3>
+                <h1>128 / 275</h1>
+                <div class="progress-bar"><div class="progress-fill"></div></div>
+            </div>
+        </div>
+        
+        <p class="section-title">選擇自習區域</p>
+        <div class="areas">
+            <div class="area-card">
+                <h3>A 區</h3>
+                <p>45 / 90 席</p>
+                <span class="status-badge">可預約</span>
+            </div>
+            <div class="area-card">
+                <h3>B 區</h3>
+                <p>38 / 90 席</p>
+                <span class="status-badge">可預約</span>
+            </div>
+            <div class="area-card">
+                <h3>C 區</h3>
+                <p>45 / 95 席</p>
+                <span class="status-badge">可預約</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- 載入自訂程式碼 -->
+    <script src="config.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
